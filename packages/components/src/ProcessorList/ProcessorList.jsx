@@ -5,21 +5,21 @@ import { Box, Flex, Text } from "rebass";
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import Processor from "../Processor/Processor.jsx";
+import List from "../List/List.jsx";
 
 function ProcessorList({ processors, onChange }) {
   return (
-    <Flex
-      sx={{
-        width: "18rem",
-        borderColor: "lightgray"
-      }}
-      flexDirection={"column"}
-    >
-      <Text fontSize={3}>Processors</Text>
+    <List title="Processors">
       {processors.map(p => {
-        return <Processor onClick={e => onChange(p.ProcID)} key={p.ProcID} p={p}></Processor>;
+        return (
+          <Processor
+            onClick={e => onChange(p.ProcID)}
+            key={p.ProcID}
+            p={p}
+          ></Processor>
+        );
       })}
-    </Flex>
+    </List>
   );
 }
 
