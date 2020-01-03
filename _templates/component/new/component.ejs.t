@@ -1,5 +1,5 @@
 ---
-to: packages/components/src/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCase.pascalCase(name) %>.js
+to: packages/components/src/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCase.pascalCase(name) %>.jsx
 ---
 import React from 'react'
 import PropTypes from 'prop-types'
