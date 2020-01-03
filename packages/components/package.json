@@ -1,0 +1,16 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/react": "^1.5.3",
+    "@rebass/preset": "^4.0.5",
+    "emotion-theming": "^10.0.27",
+    "react": "^16.12.0",
+    "theme-ui": "^0.2.52"
+  },
+  "scripts": {
+    "build": "babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js"
+  }
+}
