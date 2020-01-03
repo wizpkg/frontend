@@ -3,7 +3,7 @@ to: packages/components/src/<%= h.changeCase.pascalCase(name) %>/<%= h.changeCas
 ---
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Box, Flex } from 'theme-ui'
+import { Box, Flex } from 'rebass'
 
 /** @jsx jsx */
 import { jsx } from 'theme-ui'

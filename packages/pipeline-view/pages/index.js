@@ -4,26 +4,35 @@ import React from "react";
 
 // import { Head } from "next/head";
 
-import { NavBar, PipelineView } from "components";
+import { Box } from "rebass";
+
+import { NavBar, PipelineView, Store } from "components";
 import ThemeWrapper from "../components/ThemeWrapper";
 
-import Logo from "../public/logo.svg"
+import Logo from "../public/logo.svg";
 
 const Home = () => (
-  <div>
-    <style jsx global>{`
-      @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-      html,
-      body {
-        min-height: 100vh;
-        margin: 0;
-        font-family: "Poppins", system-ui, sans-serif;
-      }
-    `}</style>
-    <ThemeWrapper>
-      <NavBar logo={<Logo></Logo>}></NavBar>
-    </ThemeWrapper>
-  </div>
+  <ThemeWrapper>
+    <Store.Container>
+      <Box
+        sx={{
+          minHeight: "100vh"
+        }}
+      >
+        <style jsx global>{`
+          @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+          html,
+          body {
+            min-height: 100vh;
+            margin: 0;
+            font-family: "Poppins", system-ui, sans-serif;
+          }
+        `}</style>
+        <NavBar logo={<Logo width="10rem"></Logo>}></NavBar>
+        <PipelineView></PipelineView>
+      </Box>
+    </Store.Container>
+  </ThemeWrapper>
 );
 
 export default Home;
