@@ -4,6 +4,6 @@ import { ReactSVG } from "react-svg";
 import { jsx } from 'theme-ui'
 
 
-export default function Icon({ src, theme }) {
-  return <ReactSVG sx={{ fontWeight: "heading" }} src={src}></ReactSVG>;
+export default function Icon({ src, ...props }) {
+  return <ReactSVG wrapper="span" {...props} src={src}></ReactSVG>;
 }

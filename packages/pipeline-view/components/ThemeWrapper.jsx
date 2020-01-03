@@ -15,8 +15,8 @@ const theme = {
       0, 4, 8, 16, 32, 64, 128, 256
     ],
     fonts: {
-      body: '"Poppins", system-ui, sans-serif',
-      heading: '"Poppins", system-ui, sans-serif',
+      // body: '"Poppins", system-ui, sans-serif',
+      // heading: '"Poppins", system-ui, sans-serif',
       monospace: 'Menlo, monospace',
     },
     fontWeights: {

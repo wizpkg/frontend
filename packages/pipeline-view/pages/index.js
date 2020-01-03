@@ -7,6 +7,8 @@ import React from "react";
 import { NavBar, Icon } from "components";
 import ThemeWrapper from "../components/ThemeWrapper";
 
+import Logo from "../public/logo.svg"
+
 const Home = () => (
   <div>
     <style jsx global>{`
@@ -19,7 +21,7 @@ const Home = () => (
       }
     `}</style>
     <ThemeWrapper>
-      <NavBar logo={<Icon src="/logo.svg"></Icon>}></NavBar>
+      <NavBar logo={<Logo></Logo>}></NavBar>
     </ThemeWrapper>
   </div>
 );

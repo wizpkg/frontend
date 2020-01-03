@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.0.1",
     "emotion-theming": "^10.0.27",
     "next": "9.1.6",
     "next-transpile-modules": "^2.3.1",

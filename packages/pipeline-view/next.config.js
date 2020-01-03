@@ -10,6 +10,12 @@ module.exports = withTM({
       //   '@your-project/styleguide': require.resolve('@your-project/styleguide'),
       // ...
     };
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+    
     return config;
   }
 });
