@@ -7,9 +7,9 @@ import { jsx } from "theme-ui";
 import Processor from "../Processor/Processor.jsx";
 import List from "../List/List.jsx";
 
-function ProcessorList({ processors, onChange }) {
+function ProcessorList({ processors, onChange, ...props }) {
   return (
-    <List title="Processors">
+    <List title="Processors" {...props}>
       {processors.map(p => {
         return (
           <Processor

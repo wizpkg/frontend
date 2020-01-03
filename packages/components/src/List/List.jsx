@@ -5,16 +5,20 @@ import { Box, Flex, Text } from "rebass";
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 
-function List({ title, children }) {
+function List({ title, children, ...props }) {
   return (
     <Flex
+      {...props}
       sx={{
-        width: "18rem",
-        borderColor: "lightgray"
+        minHeight: "100%",
+        width: "18rem"
+        // borderColor: "lightgray",
+        // borderWidth: "1px",
+        // borderStyle: "solid"
       }}
       flexDirection={"column"}
     >
-      {title != "" ? <Text fontSize={3}>{title}</Text> : null}
+      {title != "" ? <Text fontSize={3} mb={2}>{title}</Text> : null}
       {children}
     </Flex>
   );

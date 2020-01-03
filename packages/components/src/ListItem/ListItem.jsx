@@ -10,7 +10,7 @@ function ListItem({ children, ...props }) {
     <Box
       {...props}
       p={2}
-      my={1}
+      mb={2}
       sx={{
         boxShadow: "small", //"0 0 1px 3px rgba(0, 0, 0, .125)",
         width: "100%",

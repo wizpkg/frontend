@@ -131,6 +131,6 @@ const fakeRuns: Runs = [
 export default createConnectedStore({
   processors: fakePs,
   processor: 0,
-  runs: fakeRuns,
+  runs: 0,
   run: 0
 });

@@ -8,6 +8,7 @@ const theme = {
   colors: {
     blue: "#07c",
     lightgray: "#f6f6ff",
+    gray: "#D3D3D3",
     text: "#4A4A4A",
     light: "#4A4A4A"
   },
@@ -37,6 +38,9 @@ const theme = {
       color: "white",
       bg: "primary"
     }
+  },
+  borderWidths: {
+    regular: "1px"
   }
 };
 

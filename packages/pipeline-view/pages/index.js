@@ -4,7 +4,7 @@ import React from "react";
 
 // import { Head } from "next/head";
 
-import { Box } from "rebass";
+import { Flex } from "rebass";
 
 import { NavBar, PipelineView, Store } from "components";
 import ThemeWrapper from "../components/ThemeWrapper";
@@ -14,10 +14,11 @@ import Logo from "../public/logo.svg";
 const Home = () => (
   <ThemeWrapper>
     <Store.Container>
-      <Box
+      <Flex
         sx={{
           minHeight: "100vh"
         }}
+        flexDirection="column"
       >
         <style jsx global>{`
           @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
@@ -30,7 +31,7 @@ const Home = () => (
         `}</style>
         <NavBar logo={<Logo width="10rem"></Logo>}></NavBar>
         <PipelineView></PipelineView>
-      </Box>
+      </Flex>
     </Store.Container>
   </ThemeWrapper>
 );
