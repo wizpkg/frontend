@@ -4,7 +4,7 @@ import React from "react";
 
 // import { Head } from "next/head";
 
-import { NavBar, Icon } from "components";
+import { NavBar, PipelineView } from "components";
 import ThemeWrapper from "../components/ThemeWrapper";
 
 import Logo from "../public/logo.svg"
