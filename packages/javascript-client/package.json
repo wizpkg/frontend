@@ -1,0 +1,22 @@
+{
+  "name": "wiz_processor_api",
+  "version": "1.0",
+  "description": "This_is_the_HTTP__JSON__REST_version_of_the_Wiz_Processor_API_",
+  "license": "Apache 2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.7.0",
+    "querystring": "0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}

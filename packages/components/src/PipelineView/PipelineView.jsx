@@ -17,6 +17,15 @@ import { jsx } from "theme-ui";
 
 function PipelineView(props) {
   let store = Store.useStore();
+
+  // store
+  //   .on("today")
+  //   .pipe(debounce(100))
+  //   .subscribe(async date => {
+  //     // get pipelines
+  //     let users = await api.get({ since: date });
+  //     store.set("users")(users);
+  //   });
   return (
     <Flex
       ml={16}
